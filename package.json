@@ -1,0 +1,22 @@
+{
+  "name": "hapi-web-server",
+  "version": "1.0.0",
+  "description": "latihan membuat web server dengan hapi",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ilhamtrz/hapi-web-server.git"
+  },
+  "keywords": [
+    "hapi"
+  ],
+  "author": "Ilham Triza Kurniawan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ilhamtrz/hapi-web-server/issues"
+  },
+  "homepage": "https://github.com/ilhamtrz/hapi-web-server#readme"
+}
