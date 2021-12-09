@@ -14,7 +14,8 @@ const routes = [
             return 'Halaman tidak dapat diakses dengan method tersebut.'
         },
     },
-    // "/about"
+
+    // "/about/"
     {
         method: 'GET',
         path: '/about',
@@ -29,15 +30,24 @@ const routes = [
             return 'Halaman tidak dapat diakses dengan method tersebut.'
         },
     },
+
+    // "/hello/"
     {
         method: 'GET',
         path: '/hello/{name?}',
         handler: (request, h) =>{
-            const { name = 'stranger' } = request.params;  
+            const { name = 'stranger' } = request.params; 
+            const { lang } = request.query;
+            
+            if (lang === 'id'){
+                return `Hai ${name}`;
+            }
+            
             return `Hello ${name}!`;
         },
     },
-    //selain "/" dan "/about"
+
+    //selain "/" dan "/about/"
     {
         method: '*',
         path: '/{any*}',
