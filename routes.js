@@ -29,6 +29,14 @@ const routes = [
             return 'Halaman tidak dapat diakses dengan method tersebut.'
         },
     },
+    {
+        method: 'GET',
+        path: '/hello/{name?}',
+        handler: (request, h) =>{
+            const { name = 'stranger' } = request.params;  
+            return `Hello ${name}!`;
+        },
+    },
     //selain "/" dan "/about"
     {
         method: '*',
